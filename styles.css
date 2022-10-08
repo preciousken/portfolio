@@ -1,0 +1,240 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+/* variables */
+:root{
+ --primarybg:#343434;
+ --primarytxt:#18D26E;
+ --grey:#9E9E9E;
+ --btnbg:#525252;
+ --btnbgtrans:#52525270;
+ --deepbg:#010101;
+ --deeptrans:#010101af;
+
+
+}
+body,html{
+ max-width: 100vw;
+ background: var(--primarybg);
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+}
+body{
+ background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('https://www.mooc.org/hubfs/applications-of-computer-programming.jpg');
+}
+body main{
+ position: relative;
+ display:flex;
+ flex-direction:column;
+ height: 100vh;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+ /* background: var(--primarybg); */
+}
+main>*{
+ width: 90vw;
+}
+.mobile-contents{
+ background: var(--deeptrans);
+ display: flex;
+ border: 2px solid gray;
+ text-align: justify;
+ position: absolute;
+ flex-grow: 1;
+ margin: 10px;
+ margin-top: 35px;
+ padding: 10px;
+ border-radius: 5px;
+ color: #fff;
+ min-height: 80vh;
+ transition: all 1s ease-in-out;
+ /* ////////// */
+ opacity: 0.1;
+ z-index: -10;
+}
+.show-mobile-contents{
+ opacity: 1;
+ z-index: 0;
+}
+.mobile-contents ul{
+ width: 76vw;
+}
+.mobile-contents ul li{
+ margin: 10px 0;
+}
+.toggle{
+margin: 10px;
+/* background: red; */
+display: flex;
+justify-content: flex-end;
+position: fixed;
+top: 10px;
+right: 10px;
+/* min-height: 50px; */
+}
+.toggle div{
+ /* background: pink; */
+ display: flex;
+ flex-direction: column;
+cursor: pointer;
+
+
+ /* //// */
+ position: relative;
+ /* //// */
+}
+li{
+ list-style: none;
+ /* background-color: red; */
+ margin: 10px 0;
+}
+.mobile-contents ul li a{
+ text-decoration: none;
+ color:#fff ;
+ transition: all 0.1s ease-in-out;
+}
+.mobile-contents ul li a:hover{
+ color: var(--primarytxt);
+ padding: 10px;
+}
+span{
+ height: 3px;
+ border: none;
+ border-radius: 5px;
+ width: 25px;
+ background-color: #fff;
+ margin: 2px;
+ transition: all 1s ease-in;
+}
+
+
+.rota1{
+ position: absolute;
+ right: 2px;
+ top: -6px;
+ height: 3px;
+ border: none;
+ border-radius: 5px;
+ width: 14px;
+ background-color: var(--primarytxt);
+ /* background-color: red; */
+ /* margin: 2px; */
+ transform: rotate(120deg);
+ transition: all 1s ease-in-out;
+}
+.rota3{
+ position: absolute;
+ height: 3px;
+ left: 3px;
+ bottom: -6px;
+ border: none;
+ border-radius: 5px;
+ width: 14px;
+ background-color: var(--primarytxt);
+ /* background-color: red; */
+ /* margin: 2px; */
+ transition: all 1s ease-in-out;
+ transform: rotate(114deg);
+}
+.rota2{
+ background-color: var(--primarytxt);
+}
+
+div.container{
+ /* background-color: red; */
+ margin: 20px;
+ display: flex;
+ flex-direction: column;
+}
+div.container .name{
+ font-size: 4rem;
+ font-weight: bold;
+ text-decoration: none;
+ color: var(--primarytxt);
+ margin: 10px;
+}
+div.container h2{
+ color: grey;
+ margin: 10px;
+}
+div.container ul{
+ display: flex;
+ margin: 10px;
+
+}
+div.container ul li{
+ margin-right: 20px;
+}
+div.container ul li a{
+ text-decoration: none;
+ color: grey;
+ transition: all 1s ease;
+}
+div.container ul li a:hover{
+ cursor: pointer;
+ color: #fff;
+ border-bottom: 1px solid var(--primarytxt);
+}
+.github{
+ margin-right:20px;
+ padding: 6px;
+ background: var(--btnbgtrans);
+ border-radius: 50%;
+ cursor: pointer;
+}
+i{
+ color: #ffffff;
+}
+.github:hover i{
+ color: var(--primarytxt);
+}
+.lgh-section{
+ 
+ background: var(--deepbg);
+ padding: 10px;
+ transition: all 1s ease-in-out;
+ position: fixed;
+ top: 0;
+ right: 0;
+ z-index: 100;
+ width: 100vw;
+}
+
+.lgh{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin: 0 10px;
+}
+.lgh ul{
+ display: flex;
+}
+.lgh ul li{
+ margin: 0 10px;
+}
+.lgh ul li a{
+ color: gray;
+}
+.lgh div a{
+ font-size: 2rem;
+ font-weight: bold;
+ text-decoration: none;
+ color: var(--primarytxt);
+ margin: 10px;
+}
+a{
+ text-decoration: none;
+}
+
+.nothing{
+ background: red;
+ font-family: 10rem;
+}
+
+

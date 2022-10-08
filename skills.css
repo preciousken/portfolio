@@ -1,0 +1,21 @@
+/* variables */
+:root{
+ --primarybg:#343434;
+ --primarytxt:#18D26E;
+ --grey:#9E9E9E;
+ --btnbg:#525252;
+ --btnbgtrans:#52525270;
+ --deepbg:#010101;
+ --deeptrans:#010101af;
+
+
+}
+
+.skills-container{
+ background: var(--deepbg);
+ min-height: 90vh;
+ padding: 10px;
+ border-radius: 5px;
+ color: white;
+ margin-top: 80px;
+}
